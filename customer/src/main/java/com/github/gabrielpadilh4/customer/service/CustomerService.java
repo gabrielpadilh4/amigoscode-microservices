@@ -22,7 +22,7 @@ public record CustomerService(CustomerRepository customerRepository,
         customerRepository.saveAndFlush(customer);
         // todo: check if fraudster
         FraudCheckResponseDTO fraudCheckResponseDTO = restTemplate.getForObject(
-                "http://localhost:8081/api/v1/fraud-check/{customerId}",
+                "http://FRAUD/api/v1/fraud-check/{customerId}",
                 FraudCheckResponseDTO.class,
                 customer.getId()
         );
