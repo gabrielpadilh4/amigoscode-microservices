@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>customerDTO</module>
+    <module>customer</module>
       <module>fraud</module>
     <module>eureka-server</module>
       <module>notification</module>
