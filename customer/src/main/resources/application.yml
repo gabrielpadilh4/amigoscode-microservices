@@ -11,11 +11,16 @@ spring:
     password: 'password'
   jpa:
     hibernate:
-      ddl-auto: update # When you launch the application for the first time - switch "none" at "create"
+      ddl-auto: create-drop # When you launch the application for the first time - switch "none" at "create"
     show-sql: true
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     generate-ddl: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user
+    password: password
 
 eureka:
   client:
